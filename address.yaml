@@ -1,0 +1,10 @@
+address:
+  type: object
+  properties:
+    street:
+      type: string
+      description: 'Street address'
+      maxLength: 100
+      pattern: '^[A-Za-z0-9\s]+$'  # Example pattern to allow letters, numbers, and spaces
+  required:
+    - street
